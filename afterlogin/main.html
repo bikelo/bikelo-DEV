@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>A simple map</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <script type="application/javascript" src="https://cdn.firebase.com/js/client/2.2.9/firebase.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+        <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.5/firebase.js"></script>
+
+    <!-- RSVP -->
+    <script src="bikeloworking/geofire/js/vendor/rsvp.min.js"></script>
+
+    <!-- GeoFire -->
+    <script src="bikeloworking/geofire/js/vendor/geofire.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="bikeloworking/geofire/js/html5Geolocation.js" defer></script>
+
+    <!-- Custom CSS -->
+    
+<link href='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</head>
+
+    <body>
+<div id='map'></div>
+    
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiYmlrZWxvIiwiYSI6Ijk2NTBiNDM2MTJiOGFjMmRkMDIxNmQ0ODY4NzcxNmE1In0.9ijvjwrAzmdNHaVk8BnGgQ';
+var lat = latitudeBitsForResolution
+var lon = longitudeBitsForResolution
+    var map = L.mapbox.map('map', 'mapbox.streets')
+    .setView([lat, lon], 9);
+</script>
+
+    </body>
+</html>
